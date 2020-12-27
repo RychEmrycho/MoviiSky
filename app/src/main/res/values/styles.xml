@@ -11,4 +11,23 @@
         <item name="android:statusBarColor">@color/colorWhite</item>
         <item name="android:windowTranslucentNavigation">true</item>
     </style>
+
+    <style name="NoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/colorWhite</item>
+    </style>
+
+    <style name="ButtonNeutralTheme">
+        <item name="android:colorButtonNormal">@color/colorAccent</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="ButtonPositiveTheme">
+        <item name="android:colorButtonNormal">@color/colorPrimary</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="ButtonNegativeTheme">
+        <item name="android:colorButtonNormal">@color/colorAccent</item>
+        <item name="android:padding">16dp</item>
+    </style>
 </resources>
