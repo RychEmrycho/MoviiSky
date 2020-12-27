@@ -1,6 +1,8 @@
 package com.rychemrycho.moviisky.data.repository
 
+import kotlinx.coroutines.flow.Flow
+
 interface AuthRepository {
-    fun isAuthenticated(): Boolean
-    fun setAuthenticated(isAuthenticated: Boolean)
+    fun isAuthenticated(): Flow<Boolean?>
+    suspend fun setAuthenticated(isAuthenticated: Boolean)
 }
