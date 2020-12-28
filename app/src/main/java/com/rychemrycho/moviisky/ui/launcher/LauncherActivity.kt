@@ -4,7 +4,9 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.rychemrycho.moviisky.databinding.ActivityLauncherBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class LauncherActivity : AppCompatActivity() {
     private val viewModel: LauncherViewModel by viewModels()
     private lateinit var binding: ActivityLauncherBinding
@@ -16,26 +18,26 @@ class LauncherActivity : AppCompatActivity() {
         setContentView(view)
 
         if (!viewModel.isOnboarded()) {
-            TODO("launch onboarding screen")
+            // TODO: launch onboarding screen
         }
 
         if (viewModel.isAuthenticated() || viewModel.isLauncherSkipped()) {
-            TODO("launch home screen")
+            // TODO: launch home screen
         }
 
         binding.btnSignIn.setOnClickListener {
-            TODO("launch sign in screen")
+            // TODO: launch sign in screen
         }
 
         binding.btnSignUp.setOnClickListener {
-            TODO("launch sign up screen")
+            // TODO: launch sign up screen
         }
 
         binding.btnSkipLauncher.setOnClickListener {
             if (binding.cbSkipLauncher.isChecked) {
                 viewModel.hideLauncher(true)
             }
-            TODO("launch home screen")
+            // TODO: launch home screen
         }
     }
 }

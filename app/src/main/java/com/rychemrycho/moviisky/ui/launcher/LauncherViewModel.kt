@@ -1,5 +1,6 @@
 package com.rychemrycho.moviisky.ui.launcher
 
+import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.rychemrycho.moviisky.data.repository.AuthRepository
@@ -8,7 +9,7 @@ import com.rychemrycho.moviisky.data.repository.OnboardingRepository
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
-class LauncherViewModel constructor(
+class LauncherViewModel @ViewModelInject constructor(
     private val launcherRepository: LauncherRepository,
     private val onboardingRepository: OnboardingRepository,
     private val authRepository: AuthRepository
