@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">MoviiSky</string>
+    <string name="app_logo">App logo</string>
+    <string name="app_description">Find new movies, manage your watch lists and many things!</string>
+    <string name="sign_in_info">Sign in with your account to access all features.</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up_info">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up Now!</string>
+    <string name="continue_as_guest_info">You can still use the app as guest with basic features.</string>
+    <string name="do_not_show_this_screen_next_time">Don\'t show this screen next time.</string>
+    <string name="continue_as_guest">Continue as guest</string>
 </resources>

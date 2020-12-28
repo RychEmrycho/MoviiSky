@@ -12,103 +12,102 @@
         android:id="@+id/app_logo"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="50dp"
-        android:contentDescription="App logo for launcher screen"
+        android:contentDescription="@string/app_logo"
         android:src="@mipmap/ic_launcher"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tv_launcher_title"
+        style="@style/App.Widget.Text.BigTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="MoviiSky"
         android:gravity="center"
-        style="@style/TextAppearance.MaterialComponents.Headline2"
+        android:text="@string/app_name"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/app_logo" />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tv_launcher_sub_title"
+        style="@style/App.Widget.Text.BigSubTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Find new movies, manage your watch lists and many things!"
-        style="@style/TextAppearance.MaterialComponents.Headline6"
+        android:text="@string/app_description"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_launcher_title" />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tv_sign_in_info"
+        style="@style/App.Widget.Text.Label"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="Sign in to your account to access all features."
-        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:text="@string/sign_in_info"
+        app:layout_constraintBottom_toTopOf="@id/btn_sign_in"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/btn_sign_in" />
+        app:layout_constraintRight_toRightOf="parent" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_sign_in"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sign In"
-        android:theme="@style/ButtonNeutralTheme"
         android:layout_marginBottom="16dp"
+        android:text="@string/sign_in"
+        android:theme="@style/App.Widget.Button.Primary"
+        app:layout_constraintBottom_toTopOf="@id/tv_sign_up_info"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/tv_sign_up_info" />
+        app:layout_constraintRight_toRightOf="parent" />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tv_sign_up_info"
+        style="@style/App.Widget.Text.Label"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Don't have an account?"
-        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:text="@string/sign_up_info"
+        app:layout_constraintBottom_toTopOf="@id/btn_sign_up"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/btn_sign_up" />
+        app:layout_constraintRight_toRightOf="parent" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_sign_up"
+        style="@style/App.Widget.Button.Outlined.Primary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sign Up Now!"
-        android:theme="@style/ButtonNeutralTheme"
         android:layout_marginBottom="32dp"
+        android:text="@string/sign_up"
+        app:layout_constraintBottom_toTopOf="@id/tv_skip_launcher"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/tv_skip_launcher" />
+        app:layout_constraintRight_toRightOf="parent" />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tv_skip_launcher"
+        style="@style/App.Widget.Text.Label"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="You can still use the app as guest with basic features."
-        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:text="@string/continue_as_guest_info"
         app:layout_constraintBottom_toTopOf="@id/cb_skip_launcher"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
-    <CheckBox
+    <com.google.android.material.checkbox.MaterialCheckBox
         android:id="@+id/cb_skip_launcher"
+        style="@style/App.Widget.CheckBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Don't show this screen next time"
+        android:text="@string/do_not_show_this_screen_next_time"
         app:layout_constraintBottom_toTopOf="@id/btn_skip_launcher"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_skip_launcher"
+        style="@style/App.Widget.Button.Base"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Continue as guest"
-        android:theme="@style/ButtonNeutralTheme"
+        android:text="@string/continue_as_guest"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
