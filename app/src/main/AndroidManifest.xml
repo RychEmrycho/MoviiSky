@@ -3,15 +3,19 @@
     package="com.rychemrycho.moviisky">
 
     <application
+        android:name=".App"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/App.Theme.Base">
+        <activity
+            android:name=".ui.launcher.LauncherActivity"
+            android:theme="@style/App.Theme.Base.NoActionBar" />
         <activity
             android:name=".ui.splash.SplashScreenActivity"
-            android:theme="@style/SplashScreenTheme">
+            android:theme="@style/App.Theme.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
