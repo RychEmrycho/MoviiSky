@@ -33,7 +33,7 @@ class LauncherActivity : AppCompatActivity() {
 
         binding.btnSkipLauncher.setOnClickListener {
             if (binding.cbSkipLauncher.isChecked) {
-                viewModel.hideLauncher()
+                viewModel.hideLauncher(true)
             }
             TODO("launch home screen")
         }
